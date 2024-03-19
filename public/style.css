@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(255, 249, 241);
+    
+}
+.menu{
+    background-color: #61162d;
+    margin: 0px;
+    position: relative;
+    padding: 0px;
+
+    border: 5px solid rgb(190, 154, 63);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+    text-align: center;
+}
+
+/* Menu Bar*/
+.menu>a>h2{
+    display: inline-block;
+    text-indent: 1rem;
+    color: white;
+    margin: 0px;
+    margin-left: 50px; 
+    margin-right: 50px;
+    padding: 15px 15px;
+    
+}
+/* Main Text list Position
+.main >div> ul{
+    margin: 40px;
+    position: absolute;
+    top:90px;
+    bottom: 40px; 
+    left: 600px; 
+}
+*/
+.main >div> ul{
+list-style-type: none;
+}
+
+/* Img shape */
+.main > div>img{
+    border: 5px solid rgb(190, 154, 63);
+    border-radius: 50%;
+    margin-top: 50px; 
+}
+.main >div {
+    margin: 0px; 
+    text-align: center;
+    
+}
+.main>div>h1{
+    text-align: center;
+}
+a>i{
+    color: #61162d;
+    font-size: 2.3rem;
+}
+.main-footer{
+    background-color: #61162d;
+    color: white;
+    margin-top:0px;
+    padding: 10px 10px;
+
+    border: 5px solid rgb(190, 154, 63);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
