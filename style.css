@@ -1,0 +1,190 @@
+*{
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+i{
+    color: #61162d;
+}
+
+body{
+    height: 100vh;
+
+    display: grid; 
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: 
+    "menu header"
+    "menu main";
+}
+.header{
+    margin: 0px; 
+    padding: 0px; 
+    background-image: url("../images/tamiu-backdrop\ copy.jpeg");
+    height: 300px;
+    grid-area: header;
+
+}
+.menu{
+    background-color: #61162d;
+    grid-area: menu;
+    color: white;
+    border: 5px solid rgb(191, 137, 0);
+    border-top: 0; 
+    border-bottom: 0;
+    border-left: 0; 
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 50%; 
+    padding-left: 10%;
+    gap: 100px;
+
+}
+
+.menu h2{
+    color: white;
+    font-size: 2.5rem;
+
+}
+.main img{
+    height: 50vh;
+    width: 50vh;
+}
+.main{
+    background-color: antiquewhite;
+    padding: 25px;
+    border: 5px solid rgb(191, 137, 0);
+    border-right: 0;     
+    border-left: 0;
+    border-bottom: 0;
+
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "c1 c2"
+    "c1 c2"
+    "c3 c3";
+    gap: 10px;
+
+    font-size: 1.5rem;
+   
+}
+.card{
+    background-color: antiquewhite
+    border-radius: 5%; 
+}
+
+.card:nth-child(1){
+    grid-area: c1;
+}
+.card:nth-child(1) img{
+    grid-area: c1;
+    border-radius: 2%;
+    border: 5px solid rgb(191, 137, 0);
+
+}
+
+.card:nth-child(2){
+    grid-area: c2;
+}
+.card:nth-child(3){
+    grid-area: c3;
+}
+
+/* Tablet View*/
+@media (max-width: 1000px){
+    body{
+        height: 100vh;
+    }
+    .header{
+        height: 100px;
+    }
+    .menu h2{
+        color: white;
+        font-size: 2rem;
+    
+    }
+    .menu{
+        padding-top: 20%; 
+        gap: 100px;
+    }
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 200px);
+        display: grid;
+        grid-template-areas: 
+        "c1"
+        "c1"
+        "c2"
+        "c2"
+        "c3"
+        "c3";
+        gap: 20px;
+        font-size: 1rem;
+    }
+    .card:nth-child(1) img{
+        grid-area: c1;
+        border-radius: 2%;
+        height: 40vh;
+        width: 40vh;
+    }
+
+}
+/* Phone View*/
+@media (max-width: 600px){
+    .menu{
+        border: 5px solid rgb(191, 137, 0);
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0; 
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 5%;
+
+    }
+
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 200px);
+        display: grid;
+        grid-template-areas: 
+        "c1"
+        "c1"
+        "c2"
+        "c2"
+        "c3"
+        "c3";
+        gap: 10px;
+
+        font-size: 1rem;
+        text-align: center;
+
+    }
+    body{
+        height: 100vh;
+    
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "main";
+    }
+    .card:nth-child(1) img{
+        grid-area: c1;
+        border-radius: 2%;
+        height: 40vh;
+        width: 40vh;
+  
+    }
+ 
+}
