@@ -6,6 +6,7 @@
 }
 i{
     color: #61162d;
+    font-size: 3rem;
 }
 
 body{
@@ -13,7 +14,7 @@ body{
 
     display: grid; 
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 70px 1fr;
+    grid-template-rows: 100px 1fr;
     grid-template-areas: 
     "menu header"
     "menu main";
@@ -24,7 +25,6 @@ body{
     background-image: url("../images/tamiu-backdrop\ copy.jpeg");
     height: 300px;
     grid-area: header;
-
 }
 .menu{
     background-color: #61162d;
@@ -46,12 +46,21 @@ body{
 .menu h2{
     color: white;
     font-size: 2.5rem;
-
 }
 .main img{
     height: 50vh;
     width: 50vh;
+
+    border: 5px solid rgb(191, 137, 0);
+    border-radius: 2%;
+    border: 5px solid rgb(191, 137, 0);
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+
 .main{
     background-color: antiquewhite;
     padding: 25px;
@@ -69,37 +78,39 @@ body{
     "c1 c2"
     "c1 c2"
     "c3 c3";
-    gap: 10px;
+    gap: 20px;
 
-    font-size: 1.5rem;
+    font-size: 1.3rem;
    
 }
 .card{
-    background-color: antiquewhite
+    background-color: white;
     border-radius: 5%; 
 }
 
 .card:nth-child(1){
     grid-area: c1;
-}
-.card:nth-child(1) img{
-    grid-area: c1;
-    border-radius: 2%;
-    border: 5px solid rgb(191, 137, 0);
 
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
+    padding-right: 5%;
+}
+/* Targets profile info*/
 .card:nth-child(2){
     grid-area: c2;
+    line-height: 70px;
 }
 .card:nth-child(3){
     grid-area: c3;
 }
 
 /* Tablet View*/
-@media (max-width: 1000px){
-    body{
-        height: 100vh;
+@media (max-width: 1100px){
+    i{
+        font-size: 2rem;
     }
     .header{
         height: 100px;
@@ -124,19 +135,31 @@ body{
         "c2"
         "c3"
         "c3";
-        gap: 20px;
+        gap: 10px;
         font-size: 1rem;
-    }
-    .card:nth-child(1) img{
-        grid-area: c1;
-        border-radius: 2%;
-        height: 40vh;
-        width: 40vh;
+    } 
+    .card:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        text-align: center;
+        line-height: 50px;
+        margin: 15px;
     }
 
+    .card:nth-child(1) img{
+        height: 50vh;
+        width: 40vh;
+    }
 }
 /* Phone View*/
-@media (max-width: 600px){
+@media (max-width: 700px){
+    i{
+        font-size: 1.5rem;
+    }
+
     .menu{
         border: 5px solid rgb(191, 137, 0);
         border-bottom: 0;
@@ -163,7 +186,7 @@ body{
         "c3"
         "c3";
         gap: 10px;
-
+        padding: 50px;
         font-size: 1rem;
         text-align: center;
 
@@ -180,11 +203,15 @@ body{
         "main";
     }
     .card:nth-child(1) img{
+        
         grid-area: c1;
         border-radius: 2%;
-        height: 40vh;
-        width: 40vh;
-  
+
+        height: 45vh;
+        width: 45vh;
+    }
+    .card:nth-child(2){
+        margin-top: 30px;
     }
  
 }
