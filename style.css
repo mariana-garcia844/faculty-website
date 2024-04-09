@@ -22,7 +22,7 @@ body{
 .header{
     margin: 0px; 
     padding: 0px; 
-    background-image: url("./images/tamiu-backdrop\ copy.jpeg");
+    background-image: url("images/tamiu-backdrop\ copy.jpeg");
     height: 300px;
     grid-area: header;
 }
