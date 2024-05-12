@@ -24,5 +24,9 @@ img{
     --bs-nav-link-disabled-color: rgb(191, 137, 0) !important;
 }
 
+a:hover .bi{
+    fill: #bf8900 !important;
+}
+
 
 
