@@ -10,3 +10,10 @@
 header{
     color: rgb(191, 137, 0);
 }
+.card-footer{
+    background-color: transparent !important;
+    border-top: none;
+}
+.table{
+    text-align: center;
+}
