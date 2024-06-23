@@ -1,0 +1,13 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white;
+    background-color:#61162d !important;
+}
+.nav {
+    --bs-nav-link-color: #61162d !important;
+    --bs-nav-link-hover-color: rgb(191, 137, 0)!important;
+    --bs-nav-link-disabled-color: rgb(191, 137, 0) !important;
+}
+header{
+    color: rgb(191, 137, 0);
+}
+
