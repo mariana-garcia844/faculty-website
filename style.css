@@ -27,6 +27,9 @@ img{
 a:hover .bi{
     fill: #bf8900 !important;
 }
+a:hover .wb-icon {
+    color: #bf8900 !important;
+}
 
 
 
