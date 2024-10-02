@@ -14,3 +14,7 @@ header{
     background-color: transparent !important;
     border-top: none;
 }
+
+.dropdown-menu{
+    --bs-dropdown-link-active-bg: #61162d !important;
+}
