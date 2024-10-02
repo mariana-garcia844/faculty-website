@@ -1,19 +1,24 @@
+/* Profile Header Background */
 .header-background{
     background-image: url(images/maroon-bkg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*Specifies Header text color and removes bullet points from listed info*/
 #main-profile{
     color: white;
     list-style-type: none;
 }
+/*The roundness of profile picture*/
 img{
     border-radius: 50%;
 }
+/* Social Media Icons height and width*/
 .feature-icon-small {
     width: 4rem;
     height: 4rem;
 }
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: white;
     background-color:#61162d !important;
@@ -23,7 +28,7 @@ img{
     --bs-nav-link-hover-color: rgb(191, 137, 0)!important;
     --bs-nav-link-disabled-color: rgb(191, 137, 0) !important;
 }
-
+/*Hovering effect for home icons*/
 a:hover .bi{
     fill: #bf8900 !important;
 }
