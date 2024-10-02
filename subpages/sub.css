@@ -11,3 +11,7 @@ header{
     color: rgb(191, 137, 0);
 }
 
+.dropdown-menu{
+    --bs-dropdown-link-active-bg: #61162d !important;
+}
+
