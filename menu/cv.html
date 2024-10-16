@@ -46,8 +46,25 @@
 <section>
   <div class="container d-flex flex-wrap justify-content-center">
     <object data="../files/Dr.Al Lail's CV.pdf" width="1000px" height="1000px"></object>
+      <p>Alternative text - include a link <a href="..//files/Dr.Al Lail's CV.pdf">to the PDF!</a></p>
   </div>
 </section>
+    
+<section>
+  <div  id="viewer-container" style="width: 500px; height: 100%;" class="container d-flex flex-wrap justify-content-center">
+    <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+    <script>
+      const config = { 
+        documentId: '0c434b2d-7266-4d69-b606-e3aba0171a2e',
+        darkMode: true, 
+      };
+      CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+        
+      });
+    </script>
+  </div>
+</section>
+
 
 
 <!--Footer -->
