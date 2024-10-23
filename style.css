@@ -34,6 +34,11 @@ ul li:hover ul.dropdown{
     display: block;
 }
 
+/*Dropdown Menu Color */
+.dropdown-menu{
+    --bs-dropdown-link-active-bg: #61162d !important;
+}
+
 /*Targets the Nav Tab colors */
 .nav {
     --bs-nav-link-color: #61162d !important;
