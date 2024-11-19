@@ -12,17 +12,17 @@
 </head>
 <body>
 
-<!--Nav Header-->
-  <section>
+<!-- *** Navigation Bar *** -->
+<section>
     <div class="container">
       <header class="d-flex justify-content-center py-3">
+          
         <ul class="nav nav-pills fs-5">
           <li class="nav-item"><a href="../index.html" class="nav-link active">Home</a></li>
           <li class="nav-item"><a href="cv.html" class="nav-link">CV</a></li>
-
-        <!-- Research DropDown-->
           <li class="nav-item">
             <a href="research.html" class="nav-link d-flex align-items-center col-lg-4 mb-2 mb-lg-0 text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" >Research</a>
+              <!--Nav Bar: Research DropDown -->
               <ul class="dropdown dropdown-menu text-small shadow">
                 <li><a class="dropdown-item active" href="research.html#publications" aria-current="page">Publications</a></li>
                 <li><a class="dropdown-item" href="research.html#scholarshipPerspective">Scholarship Perspective</a></li>
@@ -31,10 +31,9 @@
                 <li><a class="dropdown-item" href="research.html#undergradResearch">Undergrad Research</a></li>
               </ul>
           </li>
-
-          <!--Teaching Dropdown-->
           <li class="nav-item">
             <a href="teachings.html" class="nav-link d-flex align-items-center col-lg-4 mb-2 mb-lg-0 text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Teaching</a>
+            <!--Nav Bar: Teaching DropDown-->
             <ul class="dropdown dropdown-menu text-small shadow">
               <li><a class="dropdown-item active" href="#teachPhilo" aria-current="page">Teaching Philosophy</a></li>
               <li><a class="dropdown-item" href="#curr&courseDev">Curriculum and Course Development</a></li>
@@ -43,27 +42,27 @@
               <li><a class="dropdown-item" href="#studentReviews">Student Reviews</a></li>
             </ul>
           </li>
-            
           <li class="nav-item"><a href="service.html" class="nav-link">Service</a></li>
           <li class="nav-item"><a href="https://www.tamiu.edu/coas/soen/index.shtml" class="nav-link">School of Engineering</a></li>
         </ul>
+          
       </header>
     </div>
-  </section>  
+</section>  
 
-  <!--Teachings Header-->
-  <section class="py-1 mb-0 ">
+<!-- *** Webpage: Head Title *** -->
+<section class="py-1 mb-0 ">
     <div class="container d-flex flex-wrap justify-content-center border-bottom">
       <header class="d-flex justify-content-center py-3">
         <span class="fs-1">Teaching</span>
       </header>
     </div>
-  </section> 
+</section> 
 
-<!--Curriculum and Course Development & Teaching Philosophy-->
+<!-- *** Webpage: Content Sections *** -->
 <section class="d-flex justify-content-center px-4 py-4">
     <div class="col-md-10">
-      <!--Curriculum and Course Development-->
+      <!-- * Section: Teaching Philosophy *  -->
         <h2 class="fw-light py-2" id="teachPhilo">Teaching Philosophy</h2>
         <p>As educators, professors have two essential duties: delivering quality lectures and facilitating students' learning. Teaching allows me to fulfill one aspect of my mission as I believe students attend universities to learn and become productive society members. My teaching mission is aimed towards:
           Helping students achieve their potential in academia and in the I.T. industry.</p>
@@ -72,16 +71,18 @@
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <a href="../subpages/teachDoc.html"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Read Complete Teaching Philosophy Statement</button></a>
         </div>
+     <!-- * Section: Curriculum And Course Development *  -->
         <hr>
         <h2 class="fw-light py-2" id="curr&courseDev">Curriculum and Course Development</h2>
         <p>When I interviewed with TAMIU in March 2018, I shared my goal of helping to start a new B.S. degree in Computer Science and Engineering. At the time, TAMIU only offered a Computer Science minor. Five years later, TAMIU successfully launched the new B.S. degree in Computer Engineering and filed for ABET accreditation. As such, I contributed significantly to developing the curriculum and courses for the new B.S. degree and the minor. Table 2 above lists the 15 courses I developed, taught, and introduced into the two programs—some of which I designed for online environments that meet QM standards. The development of these courses involved designing learning outcomes, learning, and teaching materials, and assessment methods for face-to-face and online.</p>
-      <hr>
+      <!-- * Section: Scholarship and Teaching *  -->
+        <hr>
         <h2 class="fw-light py-2" id="scholar&teach">Integration of scholarship and teaching</h2>
         <p>To promote active inquiry and encourage independent problem-solving skills among my students, I incorporate my research activities into my classroom teaching. This helps them gain an in-depth understanding of functional knowledge and explore interesting topics that may motivate them to pursue an academic career. One way I do this is by developing techniques and tools to enhance the development of complex software systems. To achieve this, I collaborate with interested students to build the tools or improve the applicability of the techniques. This approach has proven to be highly effective, as evidenced by consistently high course evaluations from my students.</p>
     </div>
 </section>
 
-<!--Course TABLE-->
+<!-- *** Webpage: Course's Taught TABLE-->
 <section class="table mt-0 pt-4 pb-0 container border-top" id="courseTable">
     <h2 class="container d-flex flex-wrap link-body-emphasis mb-4 fg-text-d lts-md fs-300 fs-300-xs no-mg fw-light justify-content-center">Courses Taught</h2>
     <div class="container d-flex flex-wrap justify-content-center table-responsive medium mt-4">
@@ -159,7 +160,7 @@
       </div>
 </section>
 
-<!-- Student Reviews -->
+<!-- *** Webpage: Student Reviews -->
     <section>
       <div class="container pt-5 mt-3 mb-5 border-top" id="studentReviews">
         <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
@@ -2292,14 +2293,12 @@
       </div>
     </section>
 
-<!--Footer -->
+<!-- *** Webpage: Footer *** -->
   <section>
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-body-secondary">© 2024 Al Lail, Faculty Website</p>
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        </a>
+        <!-- Footer: Home Nav Bar -->
         <ul class="nav col-md-4 justify-content-end fs-6">
           <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
           <li class="nav-item"><a href="research.html" class="nav-link px-2 text-body-secondary">Research</a></li>
