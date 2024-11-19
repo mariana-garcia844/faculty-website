@@ -1,23 +1,23 @@
-/*Targets the Home Button Color*/
+/* Nav Bar: Home Button Color*/
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: white;
     background-color:#61162d !important;
 }
-/*Targets the Nav Tab colors */
+/* Nav Bar: Tab Buttons */
 .nav {
     --bs-nav-link-color: #61162d !important;
     --bs-nav-link-hover-color: rgb(191, 137, 0)!important;
 }
-/*Targets the Text color of main page heading*/
+/* Webpage: Header Title color*/
 header{
     color: rgb(191, 137, 0);
 }
-/*Dropdown Menu Color */
+/* Dropdown Menu Color */
 .dropdown-menu{
     --bs-dropdown-link-active-bg: #61162d !important;
 }
 
-/* Navigation Drop Menu */
+/* Nav Button - Dropdown Stylization  */
 ul ul{
     list-style: none;
 }
@@ -32,10 +32,10 @@ ul li:hover ul.dropdown{
     display: block;
 }
 
+/*   *** Student Review Card: Style ***   */
 .carousel-item {
     height: 30rem;
 }
-
 .container .car-contain {
     text-align: center;
     bottom: 0;
@@ -44,10 +44,10 @@ ul li:hover ul.dropdown{
     padding-top: 50px;
     margin-top: 20px;
 }
-
 .ratings {
     color: rgb(255, 214, 92);
 }
+/* Student Review Card: Machine Learning */
 .container .car-contain-special-ml{
     text-align: center;
     bottom: 0;
@@ -56,6 +56,7 @@ ul li:hover ul.dropdown{
     padding-top: 0px;
     margin-top: 10px;
 }
+/* Student Review Card: Fundamentals of Programming */
 .container .car-contain-special-fp{
     text-align: center;
     bottom: 0;
@@ -64,7 +65,10 @@ ul li:hover ul.dropdown{
     padding-top: 0px;
     margin-top: 10px;
 }
-/* mobile screens and up -- phone */
+
+/* ** Student Review Cards: Page Responsiveness **  */ 
+
+/* Mobile screens and up -- phone */
 @media (max-width: 576px){
     .container .car-contain-special-ml {
         padding-left: 2px;
@@ -79,7 +83,7 @@ ul li:hover ul.dropdown{
         margin-top: 3px;
       }
 }
-  /* Medium screens and up -- tablet */
+/* Medium screens and up -- tablet */
 @media (min-width: 768px) {
     .container .car-contain-special-ml {
       padding-left: 20px;
@@ -94,7 +98,7 @@ ul li:hover ul.dropdown{
         margin-top: 0px;
       }
   }
-  /* Large screens and up -- laptop */
+/* Large screens and up -- laptop */
 @media (min-width: 992px) {
     .container .car-contain-special-ml {
       padding-left: 30px;
@@ -109,7 +113,7 @@ ul li:hover ul.dropdown{
         margin-top: 10px;
       }
   }
-  /* Extra Large screens and up -- desktop */
+/* Extra Large screens and up -- desktop */
 @media (min-width: 1200px) {
     .car-contain-special-ml {
       padding-left: 50px;
