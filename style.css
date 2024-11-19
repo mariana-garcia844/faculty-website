@@ -1,25 +1,25 @@
-/* Background Image for Profile*/
+/* Background Image for Profile Header*/
 .header-background{
     background-image: url(images/maroon-bkg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*Text color for Profile */
+/* Text color for Profile Header */
 #main-profile{
     color: white;
     list-style-type: none;
 }
-/*Profile Image Roundness */
+/* Profile Header Image Roundness */
 img{
     border-radius: 50%;
 }
-/*Targets the Home Button Color*/
+/* Home Nav Button Color */
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: white;
     background-color:#61162d !important;
 }
 
-/* Navigation Drop Menu */
+/* Nav Button - Dropdown Stylization */
 ul ul{
     list-style: none;
 }
@@ -34,22 +34,18 @@ ul li:hover ul.dropdown{
     display: block;
 }
 
-/*Dropdown Menu Color */
+/* Dropdown Menu Color */
 .dropdown-menu{
     --bs-dropdown-link-active-bg: #61162d !important;
 }
 
-/*Targets the Nav Tab colors */
+/* Nav Button colors */
 .nav {
     --bs-nav-link-color: #61162d !important;
     --bs-nav-link-hover-color: rgb(191, 137, 0)!important;
 }
-/* Target's Social Media Icon color*/
+/* Home Social Media Icon*/
 a:hover .bi{
     fill: #bf8900 !important;
-}
-/* Target's the word Link for  */
-a:hover .wb-icon {
-    color: #bf8900 !important;
 }
 
